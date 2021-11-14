@@ -1,8 +1,7 @@
 @import "variable";
 
 :root{
-    --firstColor : black;
-    --secondColor : hsl(309, 77%, 40%);
+    --primary: #FFC400;
 }
 
 * , *::after,*::before{
@@ -14,4 +13,23 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    //overflow: hidden;
+}
+
+.onHoverLink{
+    color: #FFC400;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FFC400; 
 }
