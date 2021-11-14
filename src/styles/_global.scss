@@ -1,0 +1,17 @@
+@import "variable";
+
+:root{
+    --firstColor : black;
+    --secondColor : hsl(309, 77%, 40%);
+}
+
+* , *::after,*::before{
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
