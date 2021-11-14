@@ -2,8 +2,8 @@ import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">      
-        <Home/>
+    <div className="App" id='app'>     
+      <Home/>
     </div>
   );
 }
