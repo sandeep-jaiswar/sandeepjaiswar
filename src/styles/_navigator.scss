@@ -1,3 +1,9 @@
 .navigator{
     background: #0A0A0A;   
+    display: flex;
+    flex-direction: column;
+    .logo{
+        background: #000;
+        padding: 10px 10px;
+    }
 }
