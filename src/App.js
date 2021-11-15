@@ -20,7 +20,6 @@ function App() {
         <Myskill/>
         <Work/>
         <Contact/>
-        <About/>
       </div>   
     </div>
   );
