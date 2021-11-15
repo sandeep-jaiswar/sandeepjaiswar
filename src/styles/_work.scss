@@ -7,14 +7,14 @@
     justify-content: space-between;
     background: #282828;
     color: #fff;
-    padding: 3% 10%;
+    padding: 3% 5%;
     .project_card{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
         .img_container{
-            width: 40%;
+            width: 60%;
             cursor: pointer;
             position: relative;
             ::before,::after{
@@ -24,6 +24,7 @@
             img{ 
                 height: 100%;
                 width: 100%;
+                background-size: cover;
             }
             :hover{
                 opacity: 0.3;
@@ -43,7 +44,7 @@
             }
         }
         .dtls_container{
-            width: 45%;
+            width: 30%;
             .work_typo{
                 font-size: 6rem;
                 white-space: nowrap;
