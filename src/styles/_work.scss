@@ -1,0 +1,65 @@
+.work_container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #282828;
+    color: #fff;
+    padding: 3% 10%;
+    .project_card{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        .img_container{
+            width: 40%;
+            cursor: pointer;
+            position: relative;
+            ::before,::after{
+                content: '';
+                position: absolute;
+            }
+            img{ 
+                height: 100%;
+                width: 100%;
+            }
+            :hover{
+                opacity: 0.3;
+            }
+            .view_prj{
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%,-50%);
+                height: 4rem;
+                border: 4px solid #FFC400;
+                background:#000 ;
+                color: #FFC400;
+                cursor: pointer;
+                font-size: 2rem;
+            }
+        }
+        .dtls_container{
+            width: 45%;
+            .work_typo{
+                font-size: 6rem;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .title{
+                font-size: 2rem;
+                padding-bottom: 2rem;
+            }
+            .desc, .tech{
+                font-size: 1.5rem;
+                padding-bottom: 2rem;
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

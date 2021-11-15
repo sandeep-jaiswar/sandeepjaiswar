@@ -20,7 +20,7 @@ function Home() {
     }
 
     return (
-        <div className='home_container'>
+        <div className='home_container' id="home_container">
             {ele.map((cur) => (
                 <span></span>
             ))}
