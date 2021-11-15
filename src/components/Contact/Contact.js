@@ -2,8 +2,6 @@ import React from 'react';
 import "../../styles/_contact.scss";
 
 function Contact() {
-    const lt = '19.1871981';
-    const lg = '72.863352';
     return (
         <div className='contact_container' id="contact_container">
             <div className='left_container'>
@@ -20,7 +18,7 @@ function Contact() {
                 </form>
             </div>
             <div className='right_container'>
-                <iframe src="https://maps.google.com/maps?q=Appapada+Market+Auto+Stand%20Dates%20Products&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style={{width:'100%',height:'100%',border:'0'}} allowfullscreen />
+                <iframe title='my_location' src="https://maps.google.com/maps?q=Appapada+Market+Auto+Stand%20Dates%20Products&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style={{width:'100%',height:'100%',border:'0'}} allowfullscreen />
             </div>
         </div>
     )

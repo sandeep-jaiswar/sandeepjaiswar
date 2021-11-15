@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import "../../styles/_work.scss";
 
 function Work() {
@@ -34,7 +34,7 @@ function Work() {
                         <div className='tech'>Technology Stack : <br/><span> {cur.tech}</span></div>
                     </div>
                     <div className='img_container' onMouseEnter={showbtn} onMouseLeave={hidebtn}>
-                        <img ref={imgref} src={cur.img}/>
+                        <img ref={imgref} alt="live_preview" src={cur.img}/>
                         <button onClick={()=>window.open(`${cur.website}`)} ref={ref} className='view_prj'>View Project</button>
                     </div>
                 </div>
