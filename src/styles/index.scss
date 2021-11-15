@@ -3,4 +3,11 @@
 
 #app{
     display: flex;
+    position: relative;
+    .pages_container{
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 }

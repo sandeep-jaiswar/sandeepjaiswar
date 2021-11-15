@@ -6,7 +6,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    animation: lightUp 12s infinite linear;
+    animation: lightUp 8s infinite linear;
     .black_moon{
         position: absolute;
         background: #000;
@@ -15,7 +15,7 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        animation: moveUp 12s infinite linear;
+        animation: moveUp 8s infinite linear;
     }
 }
 
@@ -25,7 +25,7 @@
       box-shadow: 0 0 0px #000;
     }
     50%{
-        transform: translateY(-300%);
+        transform: translateY(-200%);
         box-shadow: 0 0 500px #000;
     }
     to {
