@@ -22,7 +22,7 @@ function Myskill() {
         )
     }
     return (
-        <div className='myskill_container'>
+        <div className='myskill_container' id="myskill_container">
             <div id='description-container' className='description-container'>
                 <div className='myskill_typo'>
                     <span>{`Skills &`}</span><br />

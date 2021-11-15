@@ -2,7 +2,7 @@ import React from 'react';
 import "../../styles/_navigator.scss";
 
 function Navigator() {
-    const linksArr = ["My Skills","Work","Contact","About"];
+    const linksArr = [{name : "My Skills", id : "myskill_container"},{name : "Projects", id : "work_container"},{name : "Contact", id : "contact_container"},{name : "About", id : "about_container"}];
     const socialLinks = [{
         url: "https://github.com/sandeep-jaiswar",
         imgSrc:"assets/images/github.svg",
@@ -12,15 +12,18 @@ function Navigator() {
         url: "https://twitter.com/FPL_TITANS",
         imgSrc:"assets/images/twitter.svg",
         alt:"twitter"
-    }]
+    }];
+    const scrollHandle = id =>{
+        document.getElementById(id).scrollIntoView();
+    }
     return (
         <div className='navigator' id='navigator'>
-            <div className='logo'>
-                <img src='assets/images/js.svg' alt="Girl in a jacket" width="100" height="100"></img>
+            <div onClick={()=>scrollHandle("home_container")} className='logo'>
+                <img src='assets/images/js.svg' alt="logo" width="100" height="100"></img>
             </div>
             {linksArr.map((li)=>(
-                <div className='nav__li'>
-                    <span>{li}</span>
+                <div onClick={()=>scrollHandle(li.id)} className='nav__li'>
+                    <span>{li.name}</span>
                 </div>
             ))}
             <div className='social__tab'>
