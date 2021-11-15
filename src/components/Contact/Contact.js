@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import "../../styles/_contact.scss";
 import emailjs, { init } from 'emailjs-com';
+import toast from 'react-hot-toast';
 
 function Contact() {
     const form = useRef();
@@ -9,7 +10,10 @@ function Contact() {
         emailjs.sendForm('service_trpvvff', 'template_v62ll4p', form.current, 'user_IBRoJ3WtOtHItu3hZnrIh')
             .then((result) => {
                 console.log(result.text);
+                toast.success("Message is sent.")
+                document.getElementById("contact_form").reset();
             }, (error) => {
+                toast.error("Something went wrong.")
                 console.log(error.text);
             });
     };

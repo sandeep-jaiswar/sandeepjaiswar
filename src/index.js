@@ -4,10 +4,12 @@ import reportWebVitals from './reportWebVitals';
 import "./font/Gilroy/styles.css";
 import "./styles/index.scss";
 import App from './App';
+import { Toaster } from 'react-hot-toast';
 
 ReactDOM.render(
   <React.StrictMode>
     <App/>
+    <Toaster/>
   </React.StrictMode>,
   document.getElementById('root')
 );
