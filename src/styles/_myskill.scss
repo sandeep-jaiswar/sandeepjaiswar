@@ -1,7 +1,7 @@
 .myskill_container{
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,7 +13,6 @@
         .myskill_typo{
             font-size: 6rem;
             white-space: nowrap;
-            text-overflow: ellipsis;
         }
     }
     .skillset-container{
@@ -42,4 +41,18 @@
 @keyframes progress-animation{
     0%{ background-position: 100% }
     100%{ background-position: 0% }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px)  {
+    .myskill_container{
+        .description-container, .skillset-container{
+            width: 100% !important;
+        }
+        .myskill_typo{
+            font-size: 2.8rem !important;
+            p{
+                font-size: 1.8rem !important;
+            }
+        }
+    }
 }
