@@ -85,16 +85,18 @@
         .dtls_container{
             .work_typo{
                 font-size: 2.8rem !important;
+                padding-top: 2rem !important;
             }
             .title{
-                font-size: 1.8rem !important;
-                padding-bottom: 1rem !important;
+                font-size: 2rem !important;
+                padding-bottom: 3rem !important;
             }
             .desc, .tech{
-                font-size: 1.5rem !important;
+                font-size: 1.8rem !important;
+                padding-bottom: 4rem !important;
                 span{
-                    font-size: 1.2rem !important;
-                    margin-top: 0.5rem;
+                    font-size: 1.4rem !important;
+                    padding-bottom: 4rem;
                 }
             }
         }
