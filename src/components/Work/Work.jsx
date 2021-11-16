@@ -38,11 +38,11 @@ function Work() {
             </div>
             <p className="title">{cur.title}</p>
             <div className="desc">
-              Features : <br />
+              <span>{`Features :`}</span> <br />
               <span>{cur.desc}</span>
             </div>
             <div className="tech">
-              Technology Stack : <br />
+              <span>{`Technology Stack :`}</span> <br />
               <span> {cur.tech}</span>
             </div>
           </div>

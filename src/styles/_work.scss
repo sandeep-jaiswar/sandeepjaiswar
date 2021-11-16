@@ -69,8 +69,25 @@
         .img_container, .dtls_container{
             width: 100% !important;
         }
-        .work_typo{
-            font-size: 2.8rem !important;
+        .project_card{
+            height: fit-content;
+            margin-bottom: 2rem;
+        }
+        .dtls_container{
+            .work_typo{
+                font-size: 2.8rem !important;
+            }
+            .title{
+                font-size: 1.8rem !important;
+                padding-bottom: 1rem !important;
+            }
+            .desc, .tech{
+                font-size: 1.5rem !important;
+                span{
+                    font-size: 1.2rem !important;
+                    margin-top: 0.5rem;
+                }
+            }
         }
     }
 }

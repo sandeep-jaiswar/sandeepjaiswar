@@ -1,7 +1,7 @@
 .home_container{
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,12 +46,10 @@
         text-transform: uppercase;
         letter-spacing: 0.5em;
     }
-      
     .ml15 .word {
         display: inline-block;
         line-height: 1em;
     }
-
     .typing_container{
         position: absolute;
         left: 5%;
@@ -62,14 +60,13 @@
         font-weight: 600;
         pointer-events: none;
     }
-    .downarrow{
-        position: absolute;
-        top: 95%;
-        bottom: 0%;
-        // animation-delay: 8s;
-        cursor: pointer;
-    }
     .letter{
         cursor: pointer !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px)  {
+    .home_container{
+        height: 100vh;
     }
 }

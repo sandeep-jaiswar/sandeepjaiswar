@@ -33,7 +33,7 @@
                     height: 100%;
                     animation: progress-animation 2s linear infinite;
                 }
-            }   
+            }
         }
     }
 }
@@ -48,10 +48,25 @@
         .description-container, .skillset-container{
             width: 100% !important;
         }
-        .myskill_typo{
-            font-size: 2.8rem !important;
+        .description-container{
+            .myskill_typo{
+                font-size: 2.8rem !important;
+            }
             p{
                 font-size: 1.8rem !important;
+            }
+        }
+        .skillset-container{
+            .skill_row{
+                margin-bottom: 2rem;
+                .skill_name{
+                    font-size: 1.4rem;
+                }
+            }
+            .profile_card{
+                .company_name, .duration, .desc{
+                    font-size: 1.2rem;
+                }
             }
         }
     }

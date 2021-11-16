@@ -54,14 +54,14 @@ function Myskill() {
           <span>{`Experience`}</span>
         </div>
         <p>
-          {` Since beginning my journey as a developer nearly 3 years ago, I’ve done remote work for multi-national company and for startup,and collaborated with talented people to create web products for both business and consumer use.`}
+          {`My journey started as front end developer nearly 3 years ago and since then, I’ve done remote work for multi-national company and for startup,and collaborated with talented people to create web products for both business and consumer use.`}
         </p>
         <p>
           {`I create successful responsive websites that are fast, easy to use, and built with best practices.
             The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, features, bug fixing and coding interactive layouts.`}
         </p>
         <p>
-          {` I  have front end developer experience with popular libraries like ReactJS, Redux.`}
+          {` I  have hands-on industry experience with popular libraries like ReactJS, Redux.`}
         </p>
       </div>
       <div className="skillset-container">

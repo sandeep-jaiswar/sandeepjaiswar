@@ -27,6 +27,10 @@ function Navigator() {
   const scrollHandle = (id) => {
     document.getElementById(id).scrollIntoView({behavior: 'smooth'});
   };
+  const linkHandler = (id) =>{
+    setToggle(false);
+    scrollHandle(id);
+  };
   const resizeCheck = () => {
     Array.from(document.getElementsByClassName('nav__li')).forEach(function(item) {
       item.style.display = window.innerWidth < 768 ? 'none' : 'block';
@@ -78,7 +82,7 @@ function Navigator() {
         )}
       </div>
       {linksArr.map((li) => (
-        <div onClick={() => scrollHandle(li.id)} key={li.id} className="nav__li">
+        <div onClick={() => linkHandler(li.id)} key={li.id} className="nav__li">
           <span>{li.name}</span>
         </div>
       ))}

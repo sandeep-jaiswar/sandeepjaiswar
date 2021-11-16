@@ -23,14 +23,6 @@ function Home() {
         <br />
         <span>{'front end developer'}</span>
       </Typing>
-      <img
-        src="assets/images/down.svg"
-        alt="downArrow"
-        height="40"
-        width="40"
-        className="downarrow"
-        id="downarrow"
-      />
     </div>
   );
 }
