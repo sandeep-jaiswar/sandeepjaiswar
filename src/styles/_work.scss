@@ -21,7 +21,7 @@
                 content: '';
                 position: absolute;
             }
-            img{ 
+            img{
                 height: 100%;
                 width: 100%;
                 background-size: cover;
@@ -68,6 +68,15 @@
     .work_container{
         .img_container, .dtls_container{
             width: 100% !important;
+        }
+        .img_container{
+            .view_prj{
+                opacity: 1 !important;
+                top: 140% !important;
+            }
+            img:hover{
+                opacity: 1 !important;
+            }
         }
         .project_card{
             height: fit-content;
