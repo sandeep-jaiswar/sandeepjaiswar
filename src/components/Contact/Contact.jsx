@@ -34,10 +34,10 @@ function Contact() {
           {`I’m actively seeking opportunities. However, if you have any question, don’t hesitate to use the form.`}
         </p>
         <form ref={form} onSubmit={sendEmail} id='contact_form'>
-          <input type='text' name='from_name' placeholder='Name'></input>
-          <input type='email' name='from_email' placeholder='Email'></input>
-          <input type='text' name='subject' placeholder='Subject'></input>
-          <textarea type='text' name='message' placeholder='Message'></textarea>
+          <input type='text' required name='from_name' placeholder='Name'></input>
+          <input type='email' required name='from_email' placeholder='Email'></input>
+          <input type='text' required name='subject' placeholder='Subject'></input>
+          <textarea type='text' required name='message' placeholder='Message'></textarea>
           <button type="submit" className='send_btn'>Send message !</button>
         </form>
       </div>
