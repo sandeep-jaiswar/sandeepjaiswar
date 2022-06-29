@@ -9,7 +9,7 @@ function Work() {
   const projectArr = [
     {
       'giturl': 'https://github.com/pesto-students/little-tags-codeword7 ',
-      'website': 'https://naughty-mccarthy-84f156.netlify.app/',
+      'website': 'https://littletagshop.netlify.app/',
       'img': 'assets/images/littletag.png',
       'title': 'Little Tags - Online Shopping System',
       'desc': `Cart, Payment, Authentication, Orders, Google and Facebook Sign In, Search, Product Listing`,
